@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - CinemachineTarget
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -15,10 +16,10 @@ TagManager:
   - UI
   - Terrain
   - Player
-  - 
-  - 
-  - 
-  - 
+  - ColliderBox
+  - EnemyProjectile
+  - Enemy
+  - Projectile
   - 
   - 
   - 
