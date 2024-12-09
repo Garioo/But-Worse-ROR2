@@ -40,10 +40,12 @@ public class BulletProjectile : MonoBehaviour
             // Log the target hit and deal damage
             Debug.Log($"Bullet hit target: {other.name}");
             target.DealDamage(damage); // Pass the damage to the BulletTarget's DealDamage method
+            Destroy(gameObject); // Destroy the bullet after hitting a target
         }
         else
         {
             Debug.Log($"Bullet hit something else.");
+            Destroy(gameObject); // Destroy the bullet if it hits something other than a BulletTarget
         }
     }
 }
